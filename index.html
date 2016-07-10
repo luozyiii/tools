@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tools.js 函数集合</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h2>cookie 操作</h2>
+	<p>注：chrome浏览器调试（f12）－－Resources面板－－Cookie</p>
+	<input type="button" name="" value="setCookie" onclick="TOOLS.setCookie('name','luo',1);">
+	<input type="button" name="" value="setCookie-2" onclick="TOOLS.setCookie('name-2','zeng',1);">
+	<input type="button" name="" value="getCookie" onclick="alert(TOOLS.getCookie('name'))">
+	<input type="button" name="" value="delCookie" onclick="TOOLS.delCookie('name')">
+	<input type="button" name="" value="clearCookie" onclick="TOOLS.clearCookie()">
+
+	<h2>Localstorage 操作</h2>
+	<p>注：chrome浏览器调试（f12）－－Resources面板－－Localstorage</p>
+	<input type="button" name="" value="setLocalstorage-1" onclick="TOOLS.setLocalstorage('name','luo')">
+	<input type="button" name="" value="setLocalstorage-2" onclick="TOOLS.setLocalstorage('name-2','zeng')">
+	<input type="button" name="" value="getLocalstorage" onclick="alert(TOOLS.getLocalstorage('name'))">
+	<input type="button" name="" value="delLocalstorage" onclick="TOOLS.delLocalstorage('name')">
+	<input type="button" name="" value="clearLocalstorage" onclick="TOOLS.clearLocalstorage()">
+
+	<h2>SessionStorage 操作(网页关闭后自动清除)</h2>
+	<p>注：chrome浏览器调试（f12）－－Resources面板－－Sessionstorage</p>
+	<input type="button" name="" value="setSessionstorage-1" onclick="TOOLS.setSessionstorage('name','luo')">
+	<input type="button" name="" value="setSessionstorage-2" onclick="TOOLS.setSessionstorage('name-2','zeng')">
+	<input type="button" name="" value="getSessionstorage" onclick="alert(TOOLS.getSessionstorage('name'))">
+	<input type="button" name="" value="delSessionstorage" onclick="TOOLS.delSessionstorage('name')">
+	<input type="button" name="" value="clearSessionstorage" onclick="TOOLS.clearSessionstorage()">
+
+	<script type="text/javascript" src="../src/tools.js"></script>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>
