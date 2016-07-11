@@ -4,7 +4,7 @@
 
 ### 函数列表
 
-	TOOLS.verify                 // 验证手机号码/身份证号码／邮箱／网址
+	TOOLS.verify                 // 校验手机号码/身份证号码／邮箱／网址等...
 	TOOLS.setCookie              // 设置cookie
 	TOOLS.getCookie              // 获取cookie
 	TOOLS.delCookie              // 删除cookie

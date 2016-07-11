@@ -30,7 +30,19 @@
     + "(:[0-9]{1,4})?" //端口- :80
     + "((/?)|" + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
 
-    // 验证手机号码/身份证号码／邮箱／网址  value:验证的值 reg：验证的规则
+    // 邮政编码
+    TOOLS.REG_POSTALCODE = /^[a-zA-Z0-9]{3,12}$/;
+
+    // 只能输入1-20个数字
+    TOOLS.REG_NUMBER = /^[0-9]{1,20}$/;
+
+    // 纯中文字符
+    TOOLS.REG_CH = /^[\u4E00-\u9FA5]+$/;
+
+    // 密码:只能输入6-20个字母、数字、下划线
+    TOOLS.REG_PASSWORD = /^(\w){6,20}$/;
+
+    // 校验手机号码/身份证号码／邮箱／网址等...  value:需要校验的值 reg：校验的规则
     TOOLS.verify = function(value,reg){
     	var regExp = new RegExp(reg);
         return regExp.test(value);
