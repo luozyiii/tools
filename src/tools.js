@@ -12,41 +12,41 @@
 	var TOOLS = {};
 
 	// 匹配手机号码的正则
-    TOOLS.REG_PHONE = /^((\(\d{2,3}\))|(\d{3}\-))?(13|15|18|14|17)\d{9}$/;
-
-    // 匹配身份证号码的正则
-    TOOLS.REG_IDCARD = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
-
-    // 匹配邮箱的正则
-    TOOLS.REG_EMAIL = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/;
-
-    // 网址的正则
-    TOOLS.REG_URL = "^((https|http|ftp|rtsp|mms)?://)" + "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?" //ftp的user@
-    + "(([0-9]{1,3}\.){3}[0-9]{1,3}" //IP形式的URL- 199.194.52.184
-    + "|" //允许IP和DOMAIN（域名）
-    + "([0-9a-z_!~*'()-]+\.)*" //域名- www.
-    + "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]\." //二级域名
-    + "[a-z]{2,6})" //first level domain- .com or .museum
-    + "(:[0-9]{1,4})?" //端口- :80
-    + "((/?)|" + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
-
-    // 邮政编码
-    TOOLS.REG_POSTALCODE = /^[a-zA-Z0-9]{3,12}$/;
-
-    // 只能输入1-20个数字
-    TOOLS.REG_NUMBER = /^[0-9]{1,20}$/;
-
-    // 纯中文字符
-    TOOLS.REG_CH = /^[\u4E00-\u9FA5]+$/;
-
-    // 密码:只能输入6-20个字母、数字、下划线
-    TOOLS.REG_PASSWORD = /^(\w){6,20}$/;
-
-    // 校验手机号码/身份证号码／邮箱／网址等...  value:需要校验的值 reg：校验的规则
-    TOOLS.verify = function(value,reg){
-    	var regExp = new RegExp(reg);
-        return regExp.test(value);
-    };
+	TOOLS.REG_PHONE = /^((\(\d{2,3}\))|(\d{3}\-))?(13|15|18|14|17)\d{9}$/;
+	
+	// 匹配身份证号码的正则
+	TOOLS.REG_IDCARD = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+	
+	// 匹配邮箱的正则
+	TOOLS.REG_EMAIL = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/;
+	
+	// 网址的正则
+	TOOLS.REG_URL = "^((https|http|ftp|rtsp|mms)?://)" + "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?" //ftp的user@
+	+ "(([0-9]{1,3}\.){3}[0-9]{1,3}" //IP形式的URL- 199.194.52.184
+	+ "|" //允许IP和DOMAIN（域名）
+	+ "([0-9a-z_!~*'()-]+\.)*" //域名- www.
+	+ "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]\." //二级域名
+	+ "[a-z]{2,6})" //first level domain- .com or .museum
+	+ "(:[0-9]{1,4})?" //端口- :80
+	+ "((/?)|" + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
+	
+	// 邮政编码
+	TOOLS.REG_POSTALCODE = /^[a-zA-Z0-9]{3,12}$/;
+	
+	// 只能输入1-20个数字
+	TOOLS.REG_NUMBER = /^[0-9]{1,20}$/;
+	
+	// 纯中文字符
+	TOOLS.REG_CH = /^[\u4E00-\u9FA5]+$/;
+	
+	// 密码:只能输入6-20个字母、数字、下划线
+	TOOLS.REG_PASSWORD = /^(\w){6,20}$/;
+	
+	// 校验手机号码/身份证号码／邮箱／网址等...  value:需要校验的值 reg：校验的规则
+	TOOLS.verify = function(value,reg){
+	    var regExp = new RegExp(reg);
+	return regExp.test(value);
+	};
 
 	// 设置cookie
 	TOOLS.setCookie = function(name,value,days){
