@@ -1,6 +1,6 @@
-# tools.js
+# tools
 
-> 原生javascript工具函数
+> 原生javascript工具函数和reset.css
 
 ### 函数列表
 
