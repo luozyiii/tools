@@ -2,7 +2,8 @@
 
 > 原生javascript工具函数和reset.css
 
-### 函数列表
+### 函数列表 
+https://luozyiii.github.io/tools/index.html
 
 	TOOLS.verify                 // 校验手机号码/身份证号码／邮箱／网址等...
 	TOOLS.setCookie              // 设置cookie
