@@ -1,0 +1,20 @@
+.clearfix:after {
+    content: ".";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    font-size: 0
+}
+.clearfix {
+    zoom: 1;
+}
+.g-f-left {
+    float: left;
+}
+.g-f-right {
+    float: right;
+}
+.js-ds-none,.ds-none {
+    display: none !important;
+}
