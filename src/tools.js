@@ -148,4 +148,4 @@
 	// 设置为全局对象
     window.TOOLS = TOOLS;
 
-})();
+})(window);
