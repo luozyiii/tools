@@ -165,7 +165,7 @@
 	language:(navigator.browserLanguage || navigator.language).toLowerCase()  
     };
     
-    //提示框
+    //移动端提示框
     TOOLS.msg = function (msg) {
     	if($("#myAlert").length==0){
 		$("body").append("<sub id='myAlert' style='position:fixed;top:50%;left:50%;z-index:99;text-align: center;width:80%;padding:1.6rem 0;background:rgba(0,0,0,.6);color:#fff;border-radius:.6rem;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);'>"+msg+"</sub>");
