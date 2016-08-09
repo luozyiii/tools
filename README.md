@@ -19,5 +19,5 @@ https://luozyiii.github.io/tools/index.html
 	TOOLS.delSessionstorage      // 删除会话存储
 	TOOLS.clearSessionstorage    // 清空所有会话存储
 	TOOLS.getParam               // 根据参数名获取当前url的参数值
-	TOOLS.browser                //浏览器navigator信息 
-	TOOLS.msg                    //移动端提示框
+	TOOLS.browser                // 浏览器navigator信息 
+	TOOLS.msg                    // 移动端提示框
