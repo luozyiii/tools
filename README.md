@@ -1,6 +1,6 @@
 # tools
 
-> reset.css和原生js工具函数
+> css和原生js工具函数
 
 ### 函数列表 
 https://luozyiii.github.io/tools/index.html
