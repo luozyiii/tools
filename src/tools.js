@@ -7,7 +7,7 @@
  *
  * ******************************/
 
-;(function(){
+;(function(window, undefined){
 
 	var TOOLS = {};
 
