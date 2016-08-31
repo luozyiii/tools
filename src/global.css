@@ -35,3 +35,41 @@
     overflow:hidden;        /* 内容超出宽度时隐藏超出部分的内容 */
     text-overflow:ellipsis; /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
 }
+
+/* 我们通常写三角形都是用伪类 请务必写上属性 content="" */
+/* 向上的三角形 */
+.triangle-up {
+    display:block;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+/* 向下的三角形 */
+.triangle-down {
+    display:block;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+}
+/* 向左的三角形 */
+.triangle-left {
+    display:block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+/* 向右的三角形 */
+.triangle-right {
+    display:block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
