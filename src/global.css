@@ -27,6 +27,7 @@
 .js-ds-none,.ds-none {
     display: none !important;
 }
+/* 文本溢出隐藏 */
 .text-overflow {
     display:block;          /*内联对象需加*/
     width:31em;             /* 固定宽度 */
