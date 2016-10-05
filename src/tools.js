@@ -48,6 +48,23 @@
 	return regExp.test(value);
 	};
 
+	// 字符串去除两端空格在处理长字符串
+	TOOLS.trim = function(str) {
+		return str.replace(/(^\s*)|(\s*$)/g, "");
+	};
+ 
+ 	// 字符串去除两端空格在处理长字符串时效率最高
+ 	TOOLS.trim2 = function(str) {
+ 		str = str.replace(/^(\s|\u00A0)+/,''); 
+        for(var i=str.length-1; i>=0; i--){ 
+            if(/\S/.test(str.charAt(i))){ 
+                str = str.substring(0, i+1); 
+                break; 
+            } 
+        } 
+        return str; 
+ 	};
+
 	// 设置cookie
 	TOOLS.setCookie = function(name,value,days){
 		var date = new Date();
@@ -168,15 +185,16 @@
     //移动端提示框
     TOOLS.msg = function (msg) {
     	if($("#myAlert").length==0){
-		$("body").append("<sub id='myAlert' style='position:fixed;top:50%;left:50%;z-index:99;text-align: center;width:80%;padding:1.6rem 0;background:rgba(0,0,0,.6);color:#fff;border-radius:.6rem;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);'>"+msg+"</sub>");
-		$("#myAlert").click(function(){$("#myAlert").hide()});
-	}else{
-		$("#myAlert").html(msg).show();
-	}
-	setTimeout(function(){
-		$("#myAlert").hide();
-	},3000)
+			$("body").append("<sub id='myAlert' style='position:fixed;top:50%;left:50%;z-index:99;text-align: center;width:80%;padding:1.6rem 0;background:rgba(0,0,0,.6);color:#fff;border-radius:.6rem;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);'>"+msg+"</sub>");
+			$("#myAlert").click(function(){$("#myAlert").hide()});
+		}else{
+			$("#myAlert").html(msg).show();
+		}
+		setTimeout(function(){
+			$("#myAlert").hide();
+		},3000)
     };
+
 	// 设置为全局对象
     window.TOOLS = TOOLS;
 
