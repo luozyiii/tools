@@ -45,7 +45,7 @@
 	// 校验手机号码/身份证号码／邮箱／网址等...  value:需要校验的值 reg：校验的规则
 	TOOLS.verify = function(value,reg){
 	    var regExp = new RegExp(reg);
-	return regExp.test(value);
+		return regExp.test(value);
 	};
 
 	// 字符串去除两端空格在处理长字符串
@@ -55,14 +55,14 @@
  
  	// 字符串去除两端空格在处理长字符串时效率最高
  	TOOLS.trim2 = function(str) {
- 		str = str.replace(/^(\s|\u00A0)+/,'');
-        for(var i=str.length-1; i>=0; i--){
-            if(/\S/.test(str.charAt(i))){
-                str = str.substring(0, i+1);
-                break;
-            }
-        }
-        return str;
+		str = str.replace(/^(\s|\u00A0)+/,'');
+		for(var i=str.length-1; i>=0; i--){
+			if(/\S/.test(str.charAt(i))){
+			    str = str.substring(0, i+1);
+			    break;
+			}
+		}
+		return str;
  	};
 
 	// 设置cookie
