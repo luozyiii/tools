@@ -38,7 +38,7 @@ yarn add rollup-plugin-terser -D
     "@babel/preset-env",
     {
       "useBuiltIns": "usage",
-      "debug": true
+      "debug": false
     }
   ]
 ]
