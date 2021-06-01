@@ -1,0 +1,22 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "rollup 构建的常用工具函数库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luozyiii/tools.git"
+  },
+  "keywords": [
+    "常用工具函数库"
+  ],
+  "author": "leslie <924361501@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luozyiii/tools/issues"
+  },
+  "homepage": "https://github.com/luozyiii/tools#readme"
+}
