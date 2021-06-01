@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "rollup 构建的常用工具函数库",
   "main": "index.js",
+  "module": "dist/tools.esm.js",
+  "browser": "dist/tools.umd.js",
   "scripts": {
     "dev": "rollup -wc rollup.config.dev.js",
     "build": "rollup -c rollup.config.dev.js",
@@ -33,5 +35,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^7.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "core-js": "3"
+  }
 }

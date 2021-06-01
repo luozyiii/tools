@@ -31,15 +31,20 @@ yarn add rollup-plugin-terser -D
   正确的做法是使用按需加载，将 useBuiltIns 改为 "usage"，babel 就可以按需加载 polyfill，并且不需要手动引入 @babel/polyfill
 
 ```javascript
+yarn add core-js@3
 
 // .babelrc 配置更新  useBuiltIns 按需引入 polyfill
-"presets": [
-  [
-    "@babel/preset-env",
-    {
-      "useBuiltIns": "usage",
-      "debug": false
-    }
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 3,
+        "debug": false
+      }
+    ]
   ]
-]
+}
+
 ```

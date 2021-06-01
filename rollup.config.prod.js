@@ -12,7 +12,7 @@ import { terser } from 'rollup-plugin-terser';
 
 const inputPath = path.resolve(__dirname, './src/index.js');
 const outputUmdPath = path.resolve(__dirname, './dist/tools.umd.js');
-const outputEsPath = path.resolve(__dirname, './dist/tools.es.js');
+const outputEsPath = path.resolve(__dirname, './dist/tools.esm.js');
 
 module.exports = {
   input: inputPath,
