@@ -1,8 +1,8 @@
 {
-  "name": "tools",
+  "name": "@leslie0403/tools",
   "version": "1.0.0",
   "description": "rollup 构建的常用工具函数库",
-  "main": "index.js",
+  "main": "dist/tools.cjs.js",
   "module": "dist/tools.esm.js",
   "browser": "dist/tools.umd.js",
   "scripts": {

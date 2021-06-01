@@ -10,6 +10,7 @@ import json from 'rollup-plugin-json';
 const inputPath = path.resolve(__dirname, './src/index.js');
 const outputUmdPath = path.resolve(__dirname, './dist/tools.umd.js');
 const outputEsPath = path.resolve(__dirname, './dist/tools.esm.js');
+const outputCjsPath = path.resolve(__dirname, './dist/tools.cjs.js');
 
 module.exports = {
   input: inputPath,
@@ -22,6 +23,10 @@ module.exports = {
     {
       file: outputEsPath,
       format: 'es',
+    },
+    {
+      file: outputCjsPath,
+      format: 'cjs',
     },
   ],
   plugins: [
